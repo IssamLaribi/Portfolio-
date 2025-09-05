@@ -120,10 +120,11 @@ body {
   gap: var(--spacing-8);
 }
 
-.nav-link {
-  color: var(--foreground);
+.nav-link,
+.nav-link:link,
+.nav-link:visited {
+  color: black;
   text-decoration: none;
-  transition: color 0.2s ease;
 }
 
 .nav-link:hover {
@@ -249,35 +250,11 @@ body {
   box-shadow: var(--shadow-lg);
 }
 
-.skill-icon {
-  font-size: var(--font-size-2xl);
-  margin-bottom: var(--spacing-3);
-}
 
 .skill-name {
   font-weight: 600;
   font-size: var(--font-size-lg);
   margin-bottom: var(--spacing-3);
-}
-
-.progress-bar {
-  width: 100%;
-  background-color: var(--muted);
-  border-radius: 9999px;
-  height: 8px;
-  margin-bottom: var(--spacing-2);
-}
-
-.progress-fill {
-  background-color: var(--accent);
-  height: 8px;
-  border-radius: 9999px;
-  transition: width 1s ease;
-}
-
-.skill-percentage {
-  font-size: var(--font-size-sm);
-  color: var(--muted-foreground);
 }
 
 /* Projects section */
